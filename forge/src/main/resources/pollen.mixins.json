@@ -1,0 +1,36 @@
+{
+  "required": true,
+  "package": "gg.moonflower.pollen.core.mixin.forge",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "client.ClientPackSourceMixin",
+    "client.CreateWorldScreenMixin",
+    "client.LevelRendererMixin",
+    "client.LevelRendererVanillaMixin",
+    "client.LiquidBlockRendererMixin",
+    "client.OptionsMixin",
+    "client.RecipeManagerAccessor",
+    "client.RenderSystemMixin"
+  ],
+  "mixins": [
+    "AxeItemMixin",
+    "EntityMixin",
+    "FireBlockAccessor",
+    "FluidMixin",
+    "FolderRepositorySourceAccessor",
+    "ForgeHooksMixin",
+    "ForgeInternalHandlerMixin",
+    "HandshakeHandlerMixin",
+    "LivingEntityMixin",
+    "PackRepositoryAccessor",
+    "PackRepositoryMixin",
+    "data.AdvancementBuilderMixin",
+    "loot.ForgeHooksMixin",
+    "loot.LootPoolAccessor",
+    "loot.LootTableMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
