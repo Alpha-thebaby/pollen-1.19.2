@@ -76,9 +76,6 @@ subprojects {
                 artifact(remapJar) {
                     builtBy "remapJar"
                 }
-                artifact(sourcesJar) {
-                    builtBy "remapSourcesJar"
-                }
             }
         }
 
