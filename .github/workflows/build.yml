@@ -34,11 +34,21 @@ jobs:
         run: ./gradlew build
         env:
           GITHUB_BUILD_NUMBER: ${{ github.run_number }}
-      - name: capture the build artifacts
+      - name: capture the common build artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: Pollen
-          path: build/libs/
+          name: Pollen Common
+          path: common/build/libs/
+      - name: capture the fabric build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Pollen Fabric
+          path: fabric/build/libs/
+      - name: capture the forge build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Pollen Forge
+          path: forge/build/libs/
   publish:
     runs-on: ubuntu-latest
     permissions:
